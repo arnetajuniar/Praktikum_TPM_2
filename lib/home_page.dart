@@ -35,6 +35,8 @@ class _HomePageState extends State<HomePage> {
                       child: Image.network(
                         dataIdentity.fotoUrls,
                         width: 150,
+                        height: 80,
+                        fit: BoxFit.cover,
                       ),
                     ),
                     Container(
