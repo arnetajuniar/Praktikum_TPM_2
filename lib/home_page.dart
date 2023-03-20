@@ -16,7 +16,7 @@ class _HomePageState extends State<HomePage> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("Main Page"),
+          title: const Text("Main Page"),
         ),
         body: ListView.builder(
           itemBuilder: (context, index) {
@@ -31,7 +31,7 @@ class _HomePageState extends State<HomePage> {
                 child: Row(
                   children: <Widget>[
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Image.network(
                         dataIdentity.fotoUrls,
                         width: 150,
@@ -40,10 +40,10 @@ class _HomePageState extends State<HomePage> {
                       ),
                     ),
                     Container(
-                      padding: EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(10),
                       child: Text(
                         dataIdentity.name,
-                        style: TextStyle(fontSize: 20),
+                        style: const TextStyle(fontSize: 20),
                       ),
                     ),
                   ],
